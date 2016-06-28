@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    get:
+      path: /get/**
+      url: http://127.0.0.1:9099
+    links:
+      path: /links/**
+      url: http://httpbin.org/links
+    images:
+      path: /image/**
+      url: http://httpbin.org/image
